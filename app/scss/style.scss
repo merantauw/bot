@@ -1,0 +1,325 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+.header {
+  background: url(../images/bg-before.png) no-repeat;
+  position: relative;
+  padding-bottom: 120px;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 588px;
+    background-repeat: no-repeat;
+  }
+  &::after {
+    background: url(../images/header-bg.png) no-repeat;
+    right: 0;
+    top: 0;
+    width: 766px;
+    height: 743px;
+  }
+  &__title {
+    width: 414px;
+    font-weight: 300;
+  }
+  &__menu {
+    padding: 25px 0;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    margin-right: 35px;
+    transition: color 0.3s;
+    &:hover{
+      color: #3f92d1;
+      transition: color 0.3s;
+    }
+  }
+  &__text {
+    @extend %main;
+    margin-bottom: 25px;
+    max-width: 490px;
+  }
+  &__buttons {
+    display: flex;
+    a:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  &__wa-bg:hover{
+      transform: scale(1.15);
+  }
+  &__tg-bg:hover{
+    transform: scale(1.15);
+  }
+}
+.about {
+  background: url(../images/about-bg.jpg) no-repeat;
+  height: 775px;
+  &__container {
+    height: 100%;
+    position: relative;
+  }
+  &__box {
+    position: absolute;
+    background-color: #fff;
+    width: 443px;
+    border-radius: 47px;
+    &:first-child {
+      box-shadow: 0px 4px 16px rgba(63, 146, 209, 0.12);
+      top: 190px;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 20px;
+        right: -240px;
+        width: 150px;
+        height: 94px;
+        background-image: url(../images/icons/message.png);
+        background-repeat: no-repeat;
+      }
+    }
+    &:last-child {
+      box-shadow: 0px 4px 16px rgba(63, 146, 209, 0.12);
+      top: 315px;
+      right: 70px;
+      &::before {
+        background-image: url(../images/icons/hey.png);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: -267px;
+        width: 256px;
+        height: 120px;
+        background-image: url(../images/icons/plane.png);
+        background-repeat: no-repeat;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: -19px;
+      left: -19px;
+      background-image: url(../images/icons/ask.png);
+      background-repeat: no-repeat;
+      width: 63px;
+      height: 64px;
+    }
+  }
+  &__text {
+    line-height: 25px;
+    color: #222222;
+    padding: 35px 35px 35px 40px;
+  }
+}
+
+.price {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    width: 459px;
+    margin-bottom: 40px;
+  }
+  &__item {
+    padding-left: 45px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 25px;
+      background-image: url(../images/icons/check.png);
+      background-repeat: no-repeat;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.example {
+  background: url(../images/example-bg.png) no-repeat;
+  z-index: 0;
+  padding: 180px 0 385px;
+  &__title {
+    margin-bottom: 60px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+  }
+  &__slider {
+    max-width: 320px;
+    position: relative;
+  }
+  &__slide {
+    img {
+      max-width: 264px;
+      border-radius: 5%;
+    }
+  }
+  &__item {
+    margin-bottom: 11px;
+  }
+  &__text {
+    max-width: 580px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 0px 12px rgb(63 146 209 / 29%);
+    transition: background-color 0.5s, color 0.5s;
+    &:hover {
+      background-color: #3f92d1;
+      color: #fff;
+      transition: background-color 0.5s, color 0.5s;
+    }
+  }
+}
+
+.recommendation {
+  padding: 100px 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    width: 560px;
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__text {
+    line-height: 21px;
+  }
+}
+
+.faq {
+  padding: 165px 0 420px;
+  background: url(../images/faq-bg.jpg) no-repeat;
+  &__title {
+    margin-bottom: 60px;
+  }
+  &__item {
+    height: 40px;
+    max-width: 851px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    transition: height 0.8s ease;
+  }
+  
+  &__item.faq__item--active{
+    height: 160px;
+    transition: all 0.5s ease;
+  }
+  &__item-title {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 0px 16px rgba(8, 76, 148, 0.1);
+    padding: 5px 20px;
+    border: 1px solid #bdd6e4;
+    &::after {
+      content: url("../images/icons/arrow-down.svg");
+      position: absolute;
+      top: 10%;
+      right: 2%;
+    }
+  }
+  &__item-text {
+    padding: 10px 20px;
+    line-height: 25px;
+    color: #222222;
+    background-color: rgba(255, 255, 255, 0.6);
+    max-width: 850px;
+    display: none;
+  }
+  &__item.faq__item--active {
+    .faq__item-title::after {
+      transition: all 0.5s ease;
+      transform: rotate(180deg);
+    }
+    .faq__item-text {
+      display: block;
+    }
+  }
+  &__item,
+  &__item-title,
+  &__item-text{
+    transition: all 0.5s ease;
+  }
+}
+
+.footer {
+  padding-bottom: 35px;
+  .title {
+    max-width: 550px;
+    margin-left: auto;
+    margin-bottom: 15px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__contacts {
+    color: #3a4d57;
+  }
+  &__contacts-top {
+    margin-bottom: 26px;
+    span {
+      font-weight: 500;
+      margin-right: 10px;
+    }
+  }
+  &__email {
+    padding-left: 25px;
+    position: relative;
+    &::before {
+      content: url("../images/icons/mailto.svg");
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  &__phone {
+    padding-left: 25px;
+    position: relative;
+    &::before {
+      content: url("../images/icons/phoneto.svg");
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  &__link {
+    margin-right: 15px;
+    &:hover{
+      color: #3f92d1;
+    }
+  }
+  &__links {
+    display: flex;
+    align-items: end;
+    a {
+      margin-right: 50px;
+    }
+  }
+  &__wa:hover,
+  &__tg:hover{
+    transform: scale(1.15);
+  }
+}
+
+@import "media";

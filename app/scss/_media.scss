@@ -1,0 +1,672 @@
+@media (max-width: 1025px) {
+  .header {
+    padding-bottom: 90px;
+    overflow: hidden;
+    .container {
+      padding: 0 25px;
+    }
+    &::after {
+      right: -17%;
+      top: -25px;
+    }
+  }
+  .about {
+    &__box {
+      &:first-child {
+        left: 50px;
+        &::after {
+          right: -170px;
+        }
+      }
+      &:last-child {
+        top: 375px;
+      }
+    }
+  }
+  .price {
+    &__container {
+      padding: 0 25px;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+  }
+  .example {
+    background: url(../images/example-bg2.png) -500px 0px no-repeat;
+    padding: 125px 0 213px;
+    &__wrapper {
+      justify-content: space-around;
+    }
+    &__title {
+      padding-left: 10px;
+      margin-bottom: 50px;
+    }
+    &__slider {
+      max-width: 264px;
+    }
+    .slick-prev {
+      left: -13%;
+    }
+    .slick-next {
+      right: 5%;
+    }
+  }
+  .recommendation {
+    padding: 0;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    font-size: 0;
+    margin: 8px 0 -4px;
+    li {
+      width: 20px;
+      height: 20px;
+      background-color: #fbcfd8;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      margin-right: 7px;
+      box-shadow: 0px 0px 12px rgba(63, 146, 209, 0.29);
+    }
+    li.slick-active {
+      background-color: #fbcfd8;
+      border: 1px solid #3f92d1;
+    }
+  }
+  .faq {
+    background: url(../images/faq-bg2.jpg) no-repeat;
+    padding: 90px 0 85px;
+    .container {
+      padding: 0 25px;
+    }
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__item {
+      max-width: 100%;
+    }
+    &__item-text {
+      max-width: 100%;
+    }
+  }
+  .footer {
+    &__contacts-top {
+      display: flex;
+      margin-bottom: 10px;
+    }
+    &__links a {
+      margin-right: 35px;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .title {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .header {
+    padding-bottom: 0;
+    background-position-x: 14%;
+    &::after {
+      background-size: 70%;
+      top: -10px;
+      right: -50%;
+    }
+    &__menu {
+      margin-bottom: 20px;
+    }
+    &__title {
+      width: 480px;
+      font-size: 50px;
+      line-height: 50px;
+      margin-bottom: 15px;
+      font-weight: 400;
+    }
+    &__text {
+      max-width: 440px;
+    }
+    &__buttons a {
+      margin-right: 35px;
+    }
+  }
+  .about {
+    &__box {
+      &:first-child {
+        top: 140px;
+        left: 50px;
+      }
+      &:last-child {
+        top: 375px;
+        right: 30px;
+      }
+    }
+  }
+  .price {
+    &__title {
+      margin-bottom: 20px;
+      width: 395px;
+    }
+  }
+  .example {
+    &__wrapper {
+      justify-content: right;
+    }
+    &__text {
+      padding: 20px;
+      max-width: 400px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__content {
+      margin-left: 40px;
+    }
+    &__item {
+      margin-bottom: 15px;
+    }
+    .slick-dots {
+      margin-bottom: -1px;
+    }
+  }
+  .recommendation {
+    .container{
+      padding: 0 25px;
+    }
+    &__img-box {
+      max-width: 50%;
+      margin-right: 25px;
+    }
+    &__title {
+      margin-bottom: 15px;
+    }
+  }
+  .faq {
+    padding-bottom: 65px;
+  }
+  .footer {
+    .title {
+      max-width: 408px;
+      margin: 5px auto 10px;
+    }
+    &__inner {
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+    &__links {
+      margin-bottom: 10px;
+      a {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .title {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  body {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .header {
+    background-position-x: 90%;
+    &::after {
+      background-size: 32%;
+      top: 53%;
+      right: -150%;
+    }
+    &__item {
+      margin-right: 25px;
+      a {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    &__title {
+      width: 221px;
+      font-size: 32px;
+      line-height: 37px;
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 18px;
+      max-width: 275px;
+    }
+    &__buttons {
+      display: block;
+    }
+    &__buttons a {
+      &:not(:last-child) {
+        margin: 0 0 8px 0;
+      }
+    }
+    &__wa-bg,
+    &__tg-bg {
+      img {
+        max-width: 150px;
+      }
+    }
+  }
+
+  .about {
+    height: 477px;
+    background: url(../images/about-bg3.jpg) no-repeat;
+    &__box {
+      max-width: 330px;
+      border-radius: 25px;
+      &::before {
+        background-size: cover;
+        width: 41px;
+        height: 41px;
+        top: -17px;
+        left: -3px;
+      }
+      &:first-child {
+        top: 50px;
+        left: 22px;
+        &::after {
+          width: 74px;
+          height: 47px;
+          background-size: cover;
+          right: 0px;
+          bottom: -50px;
+        }
+      }
+      &:last-child {
+        top: 260px;
+        right: 0;
+        left: 22px;
+        &::after {
+          width: 175px;
+          height: 78px;
+          background-size: cover;
+          top: -127%;
+          left: 27%;
+        }
+      }
+    }
+    &__text {
+      padding: 21px 15px 6px 19px;
+    }
+  }
+
+  .price {
+    padding: 40px 0;
+    background: url(../images/price-picture2.png) 100% -5% no-repeat;
+    &__container {
+      display: block;
+    }
+    &__title {
+      max-width: 260px;
+    }
+    &__box {
+      display: none;
+    }
+  }
+
+  .example {
+    padding: 25px 0 70px;
+    background: url(../images/example-bg4.png) no-repeat;
+    &__slider {
+      display: none;
+    }
+    &__content {
+      margin-left: 0;
+    }
+    &__title {
+      margin-bottom: 15px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 19px;
+      border-radius: 6px;
+    }
+  }
+
+  .recommendation {
+    padding: 0 0 20px; 
+    &__img-box {
+      display: none;
+    }
+  }
+
+  .faq {
+    background: url(../images/faq-bg4.jpg) no-repeat;
+    padding: 40px 0 110px;
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__item-title {
+      padding: 5px 25px 5px 20px;
+      font-size: 14px;
+    }
+    &__item-text {
+      line-height: 18px;
+    }
+  }
+  .footer {
+    text-align: center;
+    &__links {
+      flex-direction: column;
+    }
+    &__contacts-top {
+      display: block;
+      span {
+        margin-bottom: 5px;
+        font-weight: 600;
+      }
+    }
+    &__contacts-box {
+      margin-top: 5px;
+    }
+    &__email,
+    &__phone {
+      margin-right: 5px;
+    }
+    &__services {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 325px) {
+  .title {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  body {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .header {
+    background-position-x: 90%;
+    &::after {
+      background-size: 32%;
+      top: 53%;
+      right: -192%;
+    }
+    &__item {
+      margin-right: 25px;
+      a {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    &__title {
+      width: 221px;
+      font-size: 32px;
+      line-height: 37px;
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 18px;
+      max-width: 275px;
+    }
+    &__buttons {
+      display: block;
+    }
+    &__buttons a {
+      &:not(:last-child) {
+        margin: 0 0 8px 0;
+      }
+    }
+    &__wa-bg,
+    &__tg-bg {
+      img {
+        max-width: 150px;
+      }
+    }
+  }
+
+  .about {
+    height: 463px;
+    background: url(../images/about-bg2.jpg) no-repeat;
+    &__box {
+      max-width: 275px;
+      border-radius: 25px;
+      &::before {
+        background-size: cover;
+        width: 41px;
+        height: 41px;
+        top: -17px;
+        left: -3px;
+      }
+      &:first-child {
+        top: 50px;
+        left: 22px;
+        &::after {
+          width: 74px;
+          height: 47px;
+          background-size: cover;
+          right: 0px;
+          bottom: -50px;
+        }
+      }
+      &:last-child {
+        top: 260px;
+        right: 0;
+        left: 22px;
+        &::after {
+          width: 175px;
+          height: 78px;
+          background-size: cover;
+          top: -85%;
+          left: 13%;
+        }
+      }
+    }
+    &__text {
+      padding: 21px 15px 6px 19px;
+    }
+  }
+
+  .price {
+    padding: 40px 0;
+    background: url(../images/price-picture2.png) 100% -5% no-repeat;
+    &__container {
+      display: block;
+    }
+    &__title {
+      max-width: 260px;
+    }
+    &__box {
+      display: none;
+    }
+  }
+
+  .example {
+    padding: 35px 0 100px;
+    background: url(../images/example-bg3.png) no-repeat;
+    &__slider {
+      display: none;
+    }
+    &__content {
+      margin-left: 0;
+    }
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 19px;
+      border-radius: 6px;
+    }
+  }
+
+  .recommendation {
+    padding: 0;
+    &__img-box {
+      display: none;
+    }
+  }
+
+  .faq {
+    background: url(../images/faq-bg3.jpg) no-repeat;
+    padding: 80px 0 110px;
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__item-title {
+      padding: 5px 25px 5px 20px;
+      font-size: 14px;
+    }
+    &__item-text {
+      line-height: 18px;
+    }
+  }
+  .footer {
+    text-align: center;
+    &__links {
+      flex-direction: column;
+    }
+    &__contacts-top {
+      display: block;
+      span {
+        margin-bottom: 5px;
+        font-weight: 600;
+      }
+    }
+    &__contacts-box {
+      margin-top: 5px;
+    }
+    &__email,
+    &__phone {
+      margin-right: 5px;
+    }
+    &__services {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-height: 1024px) and (orientation: landscape) {
+  .example {
+    background-position-x: 50%;
+  }
+}
+
+@media (max-height: 768px) and (orientation: landscape) {
+  .example {
+    background-position-x: 55%;
+  }
+}
+
+@media (max-height: 420px) and (orientation: landscape) {
+  .header {
+    &__title {
+      font-size: 43px;
+      line-height: 43px;
+    }
+    &__menu {
+      margin-bottom: 0;
+    }
+    &::after {
+      background-size: 70%;
+      top: -35px;
+      right: -50%;
+    }
+    &__buttons a:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  .about {
+    &__box {
+      &:first-child {
+        top: 150px;
+      }
+    }
+  }
+
+  .example {
+    background-position-x: 86%;
+    padding: 115px 0 150px;
+    &__wrapper{
+      justify-content: center;
+    }
+    &__slider {
+      display: none;
+    }
+  }
+
+  .recommendation {
+    &__img-box {
+      margin-right: 15px;
+    }
+  }
+
+  .footer {
+    .title {
+      margin: 0 auto;
+    }
+    &__inner {
+      align-items: center;
+    }
+    &__links {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-height: 375px) and (orientation: landscape) {
+  .header {
+    &::after {
+      background-size: 60%;
+      top: -5%;
+      right: -70%;
+    }
+    &__buttons a:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  .about {
+    &__text {
+      font-size: 18px;
+      line-height: 18px;
+      padding: 30px 25px 25px 30px;
+    }
+    &__box{
+      &::before{
+        width: 44px;
+        height: 44px;
+        background-size: cover;
+        top: -15px;
+        left: -12px;
+      }
+    }
+    &__box:first-child::after {
+      right: 0px;
+      bottom: -100px;
+    }
+    &__box:last-child::after {
+      display: none;
+      top: -140px;
+      left: -100px;
+    }
+  }
+
+  .example{
+    &__wrapper{
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-height: 320px) and (orientation: landscape){
+  .header {
+    &::after {
+      background-size: 45%;
+      top: 0%;
+      right: -100%;
+    }
+    &__buttons a:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
