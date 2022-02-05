@@ -214,7 +214,6 @@
     margin-bottom: 60px;
   }
   &__item {
-    height: 40px;
     max-width: 851px;
     margin-bottom: 15px;
     border-radius: 4px;
@@ -222,7 +221,6 @@
   }
   
   &__item.faq__item--active{
-    height: 160px;
     transition: all 0.5s ease;
   }
   &__item-title {
@@ -234,8 +232,9 @@
     &::after {
       content: url("../images/icons/arrow-down.svg");
       position: absolute;
-      top: 10%;
+      top: 20%;
       right: 2%;
+      transition: transform 0.5s;
     }
   }
   &__item-text {
@@ -248,8 +247,9 @@
   }
   &__item.faq__item--active {
     .faq__item-title::after {
-      transition: all 0.5s ease;
+      transition: transform 0.5s ease;
       transform: rotate(180deg);
+      top: 10%;
     }
     .faq__item-text {
       display: block;
